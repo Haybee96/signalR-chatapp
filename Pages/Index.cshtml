@@ -1,0 +1,25 @@
+﻿@page
+
+<style>
+    input:focus {
+        outline: none;
+    }
+</style>
+
+<div class="text-center my-5">
+    <h1 class="display-10">Welcome to SignalR ChatHub</h1>
+    @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</div>
+
+<div class="chat-detail my-4"></div>
+
+<div class="chat__form d-flex justify-content-center">
+    <form class="form">
+        <input class="name-input" type="text" placeholder="type your name" style="display: block; margin-bottom: 6px; padding: 10px 15px; border-radius: 30px; width: 300px; border: 1px solid grey;">
+        <input class="message-input" type="text" placeholder="type your message" style="display: block; padding: 10px 15px; border-radius: 30px; width: 300px; border: 1px solid grey; margin-bottom: 6px;">
+
+        <center><button class="send-message" style="border: none; padding: 8px; background-color: green; background-color: white; border-radius: 50px; border: 3px solid green;">&#10004;</button></center>
+    </form>
+</div>
+
+<script src="~/lib/signalr/signalr.js"></script>
